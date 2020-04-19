@@ -1,5 +1,5 @@
 ---
-title: 'pip install에 mirror 적용하기'
+title: '[Common Tips] pip install에 mirror 적용하기'
 date: 2020-04-19
 permalink: /posts/2020/04/pip-mirror/
 tags:
