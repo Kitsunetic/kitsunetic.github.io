@@ -1,0 +1,137 @@
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D PYTHON3_EXECUTABLE=/home/kitsune/anaconda3/envs/torch/bin/python3.7 \
+-D PYTHON3_INCLUDE_DIR=/home/kitsune/anaconda3/envs/torch/include/python3.7m \
+-D PYTHON3_LIBRARY=/home/kitsune/anaconda3/envs/torch/lib/libpython3.7m.so \
+-D PYTHON3_NUMPY_INCLUDE_DIRS=/home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages/numpy/core/include \
+-D OPENCV_PYTHON3_VERSION=ON \
+-D BUILD_opencv_python3=YES \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D BUILD_opencv_world=ON \
+-D BUILD_JPEG=ON \
+-D BUILD_PNG=ON \
+-D BUILD_TIFF=ON \
+-D WITH_CUDA=OFF \
+-D WITH_IPP=OFF \
+-D WITH_QT=OFF \
+-D WITH_OPENMP=ON \
+-D WITH_TBB=OFF \
+-D WITH_IPP=OFF \
+-D WITH_1394=OFF \
+-D BUILD_WITH_DEBUG_INFO=OFF \
+-D BUILD_DOCS=OFF \
+-D INSTALL_C_EXAMPLES=ON \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D BUILD_EXAMPLES=OFF \
+-D BUILD_TESTS=OFF \
+-D BUILD_PERF_TESTS=OFF \
+-D WITH_GTK=ON \
+-D WITH_OPENGL=ON \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.10/modules \
+-D WITH_V4L=ON  \
+-D WITH_FFMPEG=ON \
+-D WITH_XINE=ON \
+-D BUILD_NEW_PYTHON_SUPPORT=ON \
+-D OPENCV_GENERATE_PKGCONFIG=ON ../
+
+-D PYTHON3_INCLUDE_DIR=/home/kitsune/anaconda3/envs/torch/include/python3.7m \
+-D PYTHON3_LIBRARY=/home/kitsune/anaconda3/envs/torch/lib/libpython3.7m.so \
+-D PYTHON3_NUMPY_INCLUDE_DIRS=/home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages/numpy/core/include \
+-D OPENCV_PYTHON3_VERSION=ON \
+-D BUILD_opencv_python3=YES \
+
+-D PYTHON3_INCLUDE_DIR=/home/kitsune/anaconda3/envs/torch/include/python3.7m \
+-D PYTHON3_NUMPY_INCLUDE_DIRS=/home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages/numpy/core/include \
+-D PYTHON3_PACKAGES_PATH=/home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages \
+-D PYTHON3_LIBRARY=/home/kitsune/anaconda3/envs/torch/lib/libpython3.7m.so
+
+
+
+
+
+--     Disabled:                    world
+--     Disabled by dependency:      -
+--     Unavailable:                 cnn_3dobj cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev cvv hdf java js matlab ovis python2 sfm ts viz
+--     Applications:                apps
+--     Documentation:               NO
+--     Non-free algorithms:         YES
+-- 
+--   GUI: 
+--     GTK+:                        YES (ver 3.22.30)
+--       GThread :                  YES (ver 2.56.4)
+--       GtkGlExt:                  NO
+--     OpenGL support:              NO
+--     VTK support:                 NO
+-- 
+--   Media I/O: 
+--     ZLib:                        /usr/lib/x86_64-linux-gnu/libz.so (ver 1.2.11)
+--     JPEG:                        build-libjpeg-turbo (ver 2.0.2-62)
+--     WEBP:                        build (ver encoder: 0x020e)
+--     PNG:                         build (ver 1.6.37)
+--     TIFF:                        build (ver 42 - 4.0.10)
+--     JPEG 2000:                   build (ver 1.900.1)
+--     OpenEXR:                     build (ver 2.3.0)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+-- 
+--   Video I/O:
+--     FFMPEG:                      YES
+--       avcodec:                   YES (57.107.100)
+--       avformat:                  YES (57.83.100)
+--       avutil:                    YES (55.78.100)
+--       swscale:                   YES (4.8.100)
+--       avresample:                NO
+--     GStreamer:                   YES (1.14.5)
+--     v4l/v4l2:                    YES (linux/videodev2.h)
+--     Xine:                        YES (ver 1.2.8)
+-- 
+--   Parallel framework:            pthreads
+-- 
+--   Trace:                         YES (with Intel ITT)
+-- 
+--   Other third-party libraries:
+--     Lapack:                      NO
+--     Eigen:                       YES (ver 3.3.4)
+--     Custom HAL:                  NO
+--     Protobuf:                    build (3.5.1)
+-- 
+--   OpenCL:                        YES (no extra features)
+--     Include path:                /home/kitsune/linux/dev/opencv-4.2.0/3rdparty/include/opencl/1.2
+--     Link libraries:              Dynamic load
+-- 
+--   Python 3:
+--     Interpreter:                 /home/kitsune/anaconda3/envs/torch/bin/python3.7 (ver 3.7.7)
+--     Libraries:                   /home/kitsune/anaconda3/envs/torch/lib/libpython3.7m.so (ver 3.7.7)
+--     numpy:                       /home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages/numpy/core/include (ver 1.18.4)
+--     install path:                lib/python3.7/site-packages/cv2/python-3.7
+-- 
+--   Python (for build):            /usr/bin/python2.7
+-- 
+--   Java:                          
+--     ant:                         NO
+--     JNI:                         NO
+--     Java wrappers:               NO
+--     Java tests:                  NO
+-- 
+--   Install to:                    /usr/local
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kitsune/linux/dev/opencv-4.2.0/build
+
+
+
+
+
+
+
+--   Python 3:
+--     Interpreter:                 /home/kitsune/anaconda3/envs/torch/bin/python3.7 (ver 3.7.7)
+--     Libraries:                   /home/kitsune/anaconda3/envs/torch/lib/libpython3.7m.so (ver 3.7.7)
+--     numpy:                       /home/kitsune/anaconda3/envs/torch/lib/python3.7/site-packages/numpy/core/include (ver 1.18.4)
+--     install path:                lib/python3.7/site-packages/cv2/python-3.7
+
+
