@@ -6,7 +6,7 @@ tags:
   - common-tips
 ---
 
-`~/.pip/pip.conf` 파일에 mirror 사이트의 주소를 입력해주면 된다.
+`~/.pip/pip.conf` 파일에 mirror 사이트의 주소를 입력해주면 된다. Windows OS라면 `%APPDATA%/.pip/pip.conf`에저장해주어야 한다.
 
 `.pip` 폴더와 `pip.conf` 파일은 기본으로 생성되지 않으므로 만약 없다면 직접 만들어줘야 한다.
 
