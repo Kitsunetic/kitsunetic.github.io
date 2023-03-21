@@ -135,7 +135,7 @@
 
         <div class="row mt-5">
             <div class="col">
-                <image src="img/teaser.png" width="100%">
+                <img src="./img/teaser.png" width="100%">
             </div>
         </div>
         <div class="row">
@@ -169,11 +169,28 @@
 
 
         <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col text-center">
+                <img src="./img/method.png" width="100%">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
             <div class="col">
                 <h3><i>Methodology</i></h3>
                 <div class="text-center">
                     <p class="text-justify">
-                        ...
+                        An overview of our method.
+                        Our method can generate high-resolution 3D shapes in the form of SDF voxels based on the
+                        denoising diffusion model (DDM).
+                        Our method has two stages: low-resolution coarse shape generation (top of the figure) and shape
+                        super-resolution for high-resolution fine shape on the voxel-shaped SDF (bottom of the figure).
+                        In the first stage, a diffusion-based 3d generative model learns to create realistic
+                        low-resolution 3D shapes.
+                        In the second stage, a diffusion-based super-resolution model is trained to upsample the 3D
+                        shapes.
+                        To alleviate cubic memory issue to handle high-resolution voxel, the second stage model is
+                        trained to super-resolve 3D shapes from corresponding high- and low-resolution patches.
                     </p>
                 </div>
             </div>
@@ -183,12 +200,32 @@
         <div class="row mt-5">
             <div class="col">
                 <h3><i>Generation Results</i></h3>
-                <div class="text-center">
-                    <p class="text-justify">
-                        ...
-                    </p>
-                </div>
+                <p class="text-justify">
+                    Generated 3D shapes from our method trained on ShapeNet dataset.
+                    32, 64, 128 means resolution of voxel-shaped SDF of generated samples.
+                </p>
             </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col">
+                <img src="./img/1.png" width="100%">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col">
+                <img src="./img/2.png" width="100%">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col">
+                <img src="./img/3.png" width="100%">
+            </div>
+            <div class="col-md-2"></div>
         </div>
 
 
