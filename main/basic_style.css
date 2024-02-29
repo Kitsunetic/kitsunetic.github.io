@@ -34,3 +34,18 @@
         margin-left: 0;
     }
 } */
+
+.strong {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ib {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ii {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
