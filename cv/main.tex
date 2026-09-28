@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in LaTeX
+% Format: Jake Gutierrez's resume template (MIT)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small #3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Jaehyeok Shim} \\ \vspace{1pt}
+    \small \href{mailto:jh.shim.gg@gmail.com}{\underline{jh.shim.gg@gmail.com}} $|$
+    \href{https://kitsunetic.github.io}{\underline{kitsunetic.github.io}} $|$
+    \href{https://github.com/Kitsunetic}{\underline{github.com/Kitsunetic}} $|$
+    \href{https://www.linkedin.com/in/jaehyeok-shim-366766213}{\underline{linkedin.com/in/jaehyeok-shim}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ulsan National Institute of Science \& Technology (UNIST)}{Ulsan, Republic of Korea}
+      {Ph.D. in Artificial Intelligence; Advisor: Prof. Kyungdon Joo}{Mar. 2025 -- Present}
+    \resumeSubheading
+      {Ulsan National Institute of Science \& Technology (UNIST)}{Ulsan, Republic of Korea}
+      {M.S. in Artificial Intelligence; Advisor: Prof. Kyungdon Joo}{Sep. 2021 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Research contribution: Diffusion-Based Signed-Distance-Fields for 3D Shape Generation (CVPR 2023).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Seoul National University of Science and Technology}{Seoul, Republic of Korea}
+      {B.S. in Electrical and Information Engineering; Double Major in Unmanned Vehicles Software}{Mar. 2015 -- Aug. 2021}
+  \resumeSubHeadingListEnd
+
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Scientist Intern}{Mar. 2025 -- Jun. 2025}
+      {Adobe}{United States}
+      \resumeItemListStart
+        \resumeItem{Conducted research under the mentorship of Dr. Jaeshin Yoon.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Researcher}{Sep. 2023 -- Feb. 2025}
+      {Ulsan National Institute of Science \& Technology (UNIST)}{Ulsan, Republic of Korea}
+      \resumeItemListStart
+        \resumeItem{Designed latent models for 3D compression and generation under Prof. Kyungdon Joo.}
+        \resumeItem{Contributed to DITTO: Dual and Integrated Latent Topologies for Implicit 3D Reconstruction (CVPR 2024) and ContactGen: Contact-Guided Interactive 3D Human Generation for Partners (AAAI 2024).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Sergeant, Information Systems Specialist}{Aug. 2016 -- May 2018}
+      {Republic of Korea Army, 1st Division}{Paju, Republic of Korea}
+  \resumeSubHeadingListEnd
+
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Trip-to-Gaussian: A Versatile Framework for Unconditional 3D Generation} $|$ TMLR 2026}{}
+      \resumeItemListStart
+        \resumeItem{Youngwoo Jeon, Inhyeok Choi, \textbf{Jaehyeok Shim}, Sangjune Park, Kyungdon Joo. \href{https://vision3d-lab.github.io/trip2gs}{[Project]} \href{https://openreview.net/pdf?id=9uL23Jcjvj}{[Paper]} \href{https://github.com/vision3d-lab/trip2gs}{[Code]}}
+        \resumeItem{Coarse-to-fine unconditional 3D generation that converts triplane latents into high-quality 3D Gaussians.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{DITTO: Dual and Integrated Latent Topologies for Implicit 3D Reconstruction} $|$ CVPR 2024}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Jaehyeok Shim}, Kyungdon Joo. \href{https://vision3d-lab.github.io/ditto}{[Project]} \href{https://arxiv.org/abs/2403.05005}{[Paper]} \href{https://github.com/vision3d-lab/ditto}{[Code]}}
+        \resumeItem{Point-cloud-to-mesh reconstruction using complementary point and grid latent representations.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{ContactGen: Contact-Guided Interactive 3D Human Generation for Partners} $|$ AAAI 2024}{}
+      \resumeItemListStart
+        \resumeItem{Dongjun Gu, \textbf{Jaehyeok Shim}, Jaehoon Jang, Changwoo Kang, Kyungdon Joo. \href{https://dongjunku.github.io/contactgen}{[Project]} \href{https://arxiv.org/abs/2401.17212}{[Paper]} \href{https://github.com/dongjunKu/ContactGen}{[Code]}}
+        \resumeItem{Guided-diffusion model that generates human poses with physically plausible partner interactions.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Diffusion-Based Signed-Distance-Fields for 3D Shape Generation} $|$ CVPR 2023}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Jaehyeok Shim}, Changwoo Kang, Kyungdon Joo. \href{https://kitsunetic.github.io/sdf-diffusion}{[Project]} \href{https://openaccess.thecvf.com/content/CVPR2023/html/Shim_Diffusion-Based_Signed-Distance-Fields_for_3D_Shape_Generation_CVPR_2023_paper.html}{[Paper]} \href{https://github.com/Kitsunetic/SDF-Diffusion}{[Code]}}
+        \resumeItem{Coarse-to-fine diffusion framework for high-fidelity 3D shape generation from signed-distance fields.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Academic Contributions}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Peer Reviewer} $|$ ECCV 2026, CVPR 2026, NeurIPS 2025, ICCV 2025, CVPR 2025, IEEE TIP}{Mar. 2024 -- Apr. 2026}
+  \resumeSubHeadingListEnd
+
+\section{Open-Source Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Kitsunetic/kitsu}{kitsu}} $|$ PyTorch, DDP}{}
+      \resumeItemListStart
+        \resumeItem{PyTorch boilerplate stack with a distributed-data-parallel trainer similar to PyTorch Lightning.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Kitsunetic/space-filling-pytorch}{space-filling-pytorch}} $|$ Triton}{}
+      \resumeItemListStart
+        \resumeItem{Library implementing space-filling curves, including Hilbert curves and Z-order, in Triton.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Kitsunetic/fast-GeM}{fast-GeM}} $|$ Triton}{}
+      \resumeItemListStart
+        \resumeItem{Triton implementation of generalized mean pooling.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/Kitsunetic/GEGLU-triton}{GEGLU-triton}} $|$ Triton}{}
+      \resumeItemListStart
+        \resumeItem{Triton implementation of gated exponential linear units.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
