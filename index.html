@@ -467,27 +467,54 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row mt-3 pt-3 pb-2 bg-light">
       <div class="col">
-        <p><b><a href="https://github.com/Kitsunetic/kitsu.git" target="_blank">kitsu</a></b><br>
+        <p class="mb-2"><b><a href="https://github.com/Kitsunetic/mesh2sdf-triton" target="_blank">mesh2sdf-triton</a></b> <i>(2026)</i><br>
+        GPU-only, differentiable mesh-to-SDF library derived from <a href="https://github.com/wang-ps/mesh2sdf" target="_blank">Mesh2SDF</a>, implemented with PyTorch and Triton. Besides the NumPy-compatible API, <code>compute_triton</code> returns an SDF connected to the PyTorch autograd graph, so gradients flow to the mesh vertices for SDF-based fitting and optimization.</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-7 d-flex align-items-center">
+            <img src="./mesh2sdf-triton/img/result.png" style="width: 100%;">
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <div class="table-responsive">
+              <table class="table table-sm table-bordered bg-white mb-1 text-center" style="font-size: 0.85rem;">
+                <thead>
+                  <tr><th>Faces</th><th>Mesh2SDF (CPU)</th><th>Ours (GPU)</th><th>Speedup</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>236</td><td>8.02 s</td><td>0.236 s</td><td>34.0x</td></tr>
+                  <tr><td>5,120</td><td>8.66 s</td><td>0.238 s</td><td>36.4x</td></tr>
+                  <tr><td>51,748</td><td>8.46 s</td><td>0.238 s</td><td>35.6x</td></tr>
+                  <tr><td>332,820</td><td>10.82 s</td><td>0.248 s</td><td>43.7x</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <small class="text-muted">End-to-end time at size=128 on an RTX 3090 (normalized Objaverse meshes, max abs. error &le; 1e-3, no sign errors).</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <p><b><a href="https://github.com/Kitsunetic/kitsu.git" target="_blank">kitsu</a></b> <i>(2023 - Present)</i><br>
         Code stack of Pytorch boilerplate codes including a DDP-based trainer similar to pytorch-lightning.</p>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col">
-        <p><b><a href="https://github.com/Kitsunetic/space-filling-pytorch.git" target="_blank">space-filling-pytorch</a></b><br>
+        <p><b><a href="https://github.com/Kitsunetic/space-filling-pytorch.git" target="_blank">space-filling-pytorch</a></b> <i>(2024)</i><br>
         Library for Space Filling Curve (e.g., Hilbert-Curve, Z-Order) implementations based on Triton.</p>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col">
-        <p><b><a href="https://github.com/Kitsunetic/fast-GeM.git" target="_blank">fast-GeM</a></b><br>
+        <p><b><a href="https://github.com/Kitsunetic/fast-GeM.git" target="_blank">fast-GeM</a></b> <i>(2024)</i><br>
         Generalized Mean Pooling (GeM) implementation using Triton.</p>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col">
-        <p><b><a href="https://github.com/Kitsunetic/GEGLU-triton.git" target="_blank">GEGLU-triton</a></b><br>
+        <p><b><a href="https://github.com/Kitsunetic/GEGLU-triton.git" target="_blank">GEGLU-triton</a></b> <i>(2024)</i><br>
         Triton implementation of GEGLU.</p>
       </div>
     </div>
